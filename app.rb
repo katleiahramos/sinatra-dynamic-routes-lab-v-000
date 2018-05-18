@@ -40,6 +40,7 @@ class App < Sinatra::Base
 
   get '/:operation/:number1/:number2' do
     #performs operation (add, sub, mul, divide) on two numbers
+    binding.pry
   end
 
 end
