@@ -20,7 +20,7 @@ class App < Sinatra::Base
     phrase = params[:phrase]
     output = ""
 
-    num.times do |phrase|
+    num.times do 
       binding.pry
       output << phrase
     end
