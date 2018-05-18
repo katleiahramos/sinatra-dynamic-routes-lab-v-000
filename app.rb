@@ -22,6 +22,7 @@ class App < Sinatra::Base
     num.times do |phrase|
       output << phrase
     end
+    "#{output}"
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
