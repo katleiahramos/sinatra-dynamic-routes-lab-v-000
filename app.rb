@@ -16,10 +16,10 @@ class App < Sinatra::Base
 
   get '/say/:number/:phrase' do
     #accepts a number and prhase and returns phrase in a string the number of times given
-    num = params[:number]
+    num = params[:number].to_i
     phrase = params[:phrase]
     output = ""
-    times.times
+    num.times
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
