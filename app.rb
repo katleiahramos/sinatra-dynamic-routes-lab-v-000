@@ -2,7 +2,8 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   # Write your code here!
-  get '/reversename/:name' do 
+  get '/reversename/:name' do
+    @name = param[:name]
     #accepts name and renders the name backwards
   end
 
@@ -11,7 +12,7 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
-    #accepts a number and prhase and returns phrase in a string the number of times given 
+    #accepts a number and prhase and returns phrase in a string the number of times given
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
@@ -19,7 +20,7 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    #performs operation (add, sub, mul, divide) on two numbers 
+    #performs operation (add, sub, mul, divide) on two numbers
   end
-  
+
 end
