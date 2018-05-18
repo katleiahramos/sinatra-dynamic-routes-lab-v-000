@@ -53,8 +53,8 @@ class App < Sinatra::Base
       num1*num2
     when 'divide'
       num1/num2
-    else 
-      nil 
+    else
+      nil
     end
   end
 
