@@ -47,7 +47,6 @@ class App < Sinatra::Base
     case op
     when "add"
       num1 + num2
-      binding.pry
     when "subtract"
       num1 - num2
     when "multiply"
