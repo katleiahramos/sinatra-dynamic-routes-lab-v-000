@@ -22,6 +22,7 @@ class App < Sinatra::Base
     num.times do |phrase|
       output << phrase
     end
+    binding.pry
     "#{output}"
   end
 
