@@ -6,6 +6,7 @@ class App < Sinatra::Base
     @name = param[:name]
     binding.pry
     "#{@name.reverse!}"
+    status 200
     #accepts name and renders the name backwards
   end
 
