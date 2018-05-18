@@ -21,7 +21,6 @@ class App < Sinatra::Base
     output = ""
 
     num.times do
-      binding.pry
       output << phrase
     end
 
