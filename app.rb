@@ -19,10 +19,11 @@ class App < Sinatra::Base
     num = params[:number].to_i
     phrase = params[:phrase]
     output = ""
+    binding.pry
     num.times do |phrase|
       output << phrase
     end
-    binding.pry
+    
     "#{output}"
   end
 
