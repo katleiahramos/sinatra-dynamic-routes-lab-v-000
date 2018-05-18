@@ -10,6 +10,8 @@ class App < Sinatra::Base
 
   get '/square/:number' do
     #accepts one number and returns the square NOTE: input will be a string use to_i
+    @num = params[:number].to_i
+    "#{@num*@num}"
   end
 
   get '/say/:number/:phrase' do
