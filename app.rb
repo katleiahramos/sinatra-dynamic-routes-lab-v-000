@@ -46,7 +46,7 @@ class App < Sinatra::Base
 
     case op
     when "add"
-      "#{num1} + #{num2}"
+      "#{num1 + num2}"
     when "subtract"
       "#{num1} - #{num2}"
     when "multiply"
